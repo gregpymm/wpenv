@@ -12,6 +12,19 @@
     {
       "type": "vcs",
       "url": "https://github.com/pantheon-systems/wordpress-composer"
+    },
+    {
+        "type": "package",
+        "package": {
+            "name": "gregpymm/wp_theme",
+            "type": "wordpress-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:gregpymm/wp-theme.git",
+                "reference": "master"
+            }
+        }
     }
   ],
   "require": {
@@ -23,7 +36,12 @@
     "vlucas/phpdotenv": "^2.4.0",
     "wpackagist-plugin/pantheon-advanced-page-cache": "^0.1.4",
     "wpackagist-plugin/wp-native-php-sessions": "^0.6.0",
-    "wpackagist-theme/twentyseventeen": "^1.1"
+    "wpackagist-theme/twentyseventeen": "^1.1",
+
+    "wpackagist-plugin/redirection":"^4.1.1",
+    "wpackagist-plugin/enable-media-replace":"^3.2.9",
+
+    "gregpymm/wp_theme":"dev-master"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
